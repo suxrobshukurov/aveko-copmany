@@ -1,0 +1,77 @@
+header {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &* {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1;
+    }
+    .header {
+        position: absolute;
+        width: 100%;
+        max-width: 61vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // padding: 3.5em 0em 0 0;
+        align-items: center;
+        left: 19vw;
+        top: 3.5em;
+        z-index: 999;
+        img.logo {
+            max-width: 7em;
+            width: 100%;
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            ul.nav-items {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-end;
+                list-style: none;
+                padding: 0 4.2em 0 0;
+            }
+            li.nav-item {
+                &:not(:last-child) {
+                    padding: 0 3.3em 0 0;
+                }
+                a.nav-link {
+                    font-size: 1.1em;
+                    letter-spacing: -0.0129em;
+                }
+            }
+        }
+        .header-button {
+            background-color: $lightBlue;
+            border-radius: 50px;
+            outline-offset: 2px;
+            outline: 1px solid $lightBlue;
+            .btn {
+                padding: 0.4em 1.1em 0.4em 3em;
+                background: url("../img/phone-icon.svg") no-repeat;
+                background-position: 5px 3px;
+                background-size: auto;
+                a {
+                    color: $white;
+                    &::before {
+                        content: "";
+                        width: 20px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}

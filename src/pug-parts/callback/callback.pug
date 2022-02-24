@@ -1,0 +1,14 @@
+section.callback
+    .callback-form
+        form(action="") 
+            h2.form-title записаться на экзамен
+            .field
+                label(for="name").form-label Ваше имя
+                input(type="text" name="name").form-input
+            .field
+                label(for="phone").form-label Номер телефона
+                input(type="text" name="phone").form-input
+            .btn--cyan
+                input(type="button", value="Записаться").btn
+    .map
+        img(src="/img/map.jpg", alt="", style="width:80vw;")

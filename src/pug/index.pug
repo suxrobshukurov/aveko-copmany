@@ -1,0 +1,38 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		meta(
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+		)
+		title= "title"
+		link(
+			rel="stylesheet",
+			href="css/style.min.css"
+		)
+		script(src="/js/libs.min.js") 
+		script(src="/js/main.js")
+
+
+	body
+		include ../pug-parts/header/header.pug
+
+		include ../pug-parts/promo/promo.pug
+
+		include ../pug-parts/advantage/advantage.pug
+		
+		include ../pug-parts/exam/exam.pug
+
+		include ../pug-parts/how-can/how-can.pug
+	
+		include ../pug-parts/schedule/schedule.pug
+
+		include ../pug-parts/gov-certificate/certificate.pug
+
+		include ../pug-parts/callback/callback.pug
+
+		include ../pug-parts/footer/footer.pug
+
+
+
