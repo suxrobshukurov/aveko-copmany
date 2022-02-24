@@ -22,10 +22,10 @@ header {
         // padding: 3.5em 0em 0 0;
         align-items: center;
         left: 19vw;
-        top: 3.5em;
+        top: 2.8vw;
         z-index: 999;
         img.logo {
-            max-width: 7em;
+            max-width: 5.8em;
             width: 100%;
         }
         nav {
@@ -41,28 +41,46 @@ header {
                 align-items: center;
                 justify-content: flex-end;
                 list-style: none;
-                padding: 0 4.2em 0 0;
+                padding: 0 2.9em 0 0;
             }
             li.nav-item {
                 &:not(:last-child) {
-                    padding: 0 3.3em 0 0;
+                    padding: 0 2.1em 0 0;
                 }
                 a.nav-link {
-                    font-size: 1.1em;
+                    font-family: "Roboto";
+                    font-size: 1em;
                     letter-spacing: -0.0129em;
+                    color: $darkBlue;
                 }
             }
         }
         .header-button {
-            background-color: $lightBlue;
-            border-radius: 50px;
+            position: relative;
             outline-offset: 2px;
+            border-radius: 50px;
             outline: 1px solid $lightBlue;
             .btn {
-                padding: 0.4em 1.1em 0.4em 3em;
-                background: url("../img/phone-icon.svg") no-repeat;
-                background-position: 5px 3px;
-                background-size: auto;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                width: 10em;
+                height: 1.7em;
+                background-color: $lightBlue;
+                border-radius: 50px;
+                transition: 0.3s linear;
+                &:hover {
+                    transform: scale(0.97, 0.9);
+                }
+                span.btn-icon {
+                    display: block;
+                    background: url("../img/phone-icon.svg") no-repeat center center;
+                    background-size: contain;
+                    width: 23px;
+                    height: 22px;
+                }
                 a {
                     color: $white;
                     &::before {
