@@ -25,7 +25,7 @@ header {
         top: 2.8vw;
         z-index: 999;
         img.logo {
-            max-width: 5.8em;
+            max-width: 7.1em;
             width: 100%;
         }
         nav {
@@ -41,11 +41,11 @@ header {
                 align-items: center;
                 justify-content: flex-end;
                 list-style: none;
-                padding: 0 2.9em 0 0;
+                padding: 0 4.2em 0 0;
             }
             li.nav-item {
                 &:not(:last-child) {
-                    padding: 0 2.1em 0 0;
+                    padding: 0 3.4em 0 0;
                 }
                 a.nav-link {
                     font-family: "Roboto";
@@ -66,8 +66,8 @@ header {
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
-                width: 10em;
-                height: 1.7em;
+                width: 11.5em;
+                height: 2.1em;
                 background-color: $lightBlue;
                 border-radius: 50px;
                 transition: 0.3s linear;

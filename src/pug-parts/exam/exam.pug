@@ -1,17 +1,27 @@
 section.exam
     .exam-left-row
-        h2.exam-title структура экзамен
+        h2.exam-title структура экзамена
         .exam-description Экзамен состоит из трех молудей и длится не более 80 минут:
         ul.program-list
             li.program-item
-                span.program-item-title Модуль 1 Русский язык
-                span.program-item-description Модуль 1 Русский язык <br>Лексика. Грамматика (тест) <br>Чтение (тест) <br>Аудирование (тест) <br>Письмо (1 задание) <br>Устная речь (3-5 заданий)
+                .program-item-title 
+                    span.title-mark Модуль 1 
+                    span Русский язык
+                .program-item-description 
+                    p Лексика. Грамматика (тест) <br>Чтение (тест) <br>Аудирование (тест) <br>Письмо (1 задание) <br>Устная речь (3-5 заданий)
             li.program-item
-                span.program-item-title Модуль 2 История России
-                span.program-item-description Тест из <b>10</b> вопросов
+                .program-item-title 
+                    span.title-mark Модуль 2 
+                    span История России
+                .program-item-description 
+                    p Тест из <b>10</b> вопросов
             li.program-item
-                span.program-item-title Основы законодательства РФ
-                span.program-item-description Тест из <b>10</b> вопросов
+                .program-item-title 
+                    span.title-mark Модуль 3 
+                    span Основы законодательства РФ
+                .program-item-description 
+                    p Тест из <b>10</b> вопросов
+
     .exam-right-row
         .gallery
             .example-img
@@ -20,3 +30,6 @@ section.exam
             .example-img
                 img(src="/img/example-2.webp", alt="example-02")
                 a(href="#").img-icon
+    //- .bg-exam
+    //- .bg-slice.slice-left
+    //- .bg-slice.slice-right
