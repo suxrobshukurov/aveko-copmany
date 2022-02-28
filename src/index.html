@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>title</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="/js/libs.min.js"> </script>
-    <script src="/js/main.js"></script>
   </head>
   <body>
     <header> 
@@ -46,10 +44,22 @@
     <section class="advantage">
       <div class="container">
         <ul class="profit-list">
-          <li class="profit-item"><span class="profit-icon profit-item--certificate"></span><span class="profit-item-title">Сертификат позволяет получить патент или разрешение на работу</span></li>
-          <li class="profit-item"><span class="profit-icon profit-item--exam"></span><span class="profit-item-title">Экзамен проводят педагоги русского языка РГПУ им. А. И. Герцена</span></li>
-          <li class="profit-item"><span class="profit-icon profit-item--test"></span><span class="profit-item-title">Тест проходит в уютном классе, оборудованном современной техникой</span></li>
-          <li class="profit-item"><span class="profit-icon profit-item--issue"></span><span class="profit-item-title">Выдаем сертификат государственного образца в течение 5 рабочих дней</span></li>
+          <li class="profit-item">
+            <div class="profit-icon profit-item--certificate"></div>
+            <div class="profit-item-title">Сертификат позволяет получить патент или разрешение на работу</div>
+          </li>
+          <li class="profit-item">
+            <div class="profit-icon profit-item--exam"></div>
+            <div class="profit-item-title">Экзамен проводят педагоги русского языка РГПУ им. А. И. Герцена</div>
+          </li>
+          <li class="profit-item">
+            <div class="profit-icon profit-item--test"></div>
+            <div class="profit-item-title">Тест проходит в уютном классе, оборудованном современной техникой</div>
+          </li>
+          <li class="profit-item">
+            <div class="profit-icon profit-item--issue"></div>
+            <div class="profit-item-title">Выдаем сертификат государственного образца в течение 5 рабочих дней</div>
+          </li>
         </ul>
       </div>
     </section>
@@ -80,19 +90,45 @@
       </div>
       <div class="exam-right-row">
         <div class="gallery">
-          <div class="example-img"><img src="/img/example-1.webp" alt="example-01"><a class="img-icon" href="#"></a></div>
-          <div class="example-img"><img src="/img/example-2.webp" alt="example-02"><a class="img-icon" href="#"></a></div>
+          <div class="swiper-box">
+            <div class="swiper mySwiper"> 
+              <div class="swiper-wrapper"> <a class="swiper-slide" data-fancybox data-caption="example-01" href="img/example-1.webp"><span class="zoom-icon"></span><img src="img/example-1.webp" alt="example-01"></a><a class="swiper-slide" data-fancybox data-caption="example-02" href="img/example-2.webp"><span class="zoom-icon"></span><img src="img/example-2.webp" alt="example-0"></a></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <canvas id="stars"></canvas>
     <section class="how-can">
-      <h2 class="how-can-title">как получить сертификат</h2>
-      <ul class="how-can-list">
-        <li class="how-can-item profit-item--first"><span class="how-can-icon">1</span><span class="how-can-item-title">Запишитесь на экзамен в удобный для вас день и время.</span></li>
-        <li class="how-can-item profit-item--second"><span class="how-can-icon">2</span><span class="how-can-item-title">Предоставьте оригинал паспорта и официальный перевод паспорта.</span></li>
-        <li class="how-can-item profit-item--third"><span class="how-can-icon">3</span><span class="how-can-item-title">Заключите договор об оказании услуг и оплатите экзамен в кассе центра тестирования.</span></li>
-        <li class="how-can-item profit-item--fourth"><span class="how-can-icon">4</span><span class="how-can-item-title">Сдайте тест и получите сертификат!</span></li>
-      </ul>
+      <div class="container">
+        <h2 class="how-can-title">как получить сертификат</h2>
+        <ul class="how-can-list">
+          <li class="how-can-item profit-item--first">
+            <div class="how-can-icon">
+              <div class="icon-number">1</div>
+            </div>
+            <div class="how-can-item-title">Запишитесь на экзамен в удобный для вас день и время.</div>
+          </li>
+          <li class="how-can-item profit-item--second">
+            <div class="how-can-icon">
+              <div class="icon-number">2</div>
+            </div>
+            <div class="how-can-item-title">Предоставьте оригинал паспорта и официальный перевод паспорта.</div>
+          </li>
+          <li class="how-can-item profit-item--third">
+            <div class="how-can-icon">
+              <div class="icon-number">3</div>
+            </div>
+            <div class="how-can-item-title">Заключите договор об оказании услуг и оплатите экзамен в кассе центра тестирования.</div>
+          </li>
+          <li class="how-can-item profit-item--fourth">
+            <div class="how-can-icon">
+              <div class="icon-number">4</div>
+            </div>
+            <div class="how-can-item-title">Сдайте тест и получите сертификат!</div>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="schedule">
       <h2 class="schedule-title">график работы</h2>
@@ -154,5 +190,8 @@
         <div class="phone"><a href="tel:+78124546265">+7 812 454-62-65</a><a href="mailto:info@aveko.company">info@aveko.company </a></div>
       </div>
     </footer>
+    <script src="/js/libs.min.js"></script>
+    <script src="http://atuin.ru/js/art/stars.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>

@@ -30,7 +30,10 @@ section.advantage {
                 margin: 0;
                 padding: 6em 0 0 0;
                 text-align: center;
-                span.profit-icon {
+                &:hover .profit-icon {
+                    transform: scale(1.1);
+                }
+                .profit-icon {
                     display: block;
                     width: 8.9em;
                     height: 8.9em;
@@ -42,20 +45,21 @@ section.advantage {
                     outline: 2px solid $lightBlue;
                     outline-offset: 3px;
                     border-radius: 50%;
+                    transition: 0.3s ease-in-out;
                 }
                 .profit-item--certificate {
-                    background: url("../img/certificate.svg");
+                    background-image: url("../img/certificate.svg");
                 }
                 .profit-item--exam {
-                    background: url("../img/exam.svg");
+                    background-image: url("../img/exam.svg");
                 }
                 .profit-item--test {
-                    background: url("../img/test.svg");
+                    background-image: url("../img/test.svg");
                 }
                 .profit-item--issue {
-                    background: url("../img/issue.svg");
+                    background-image: url("../img/issue.svg");
                 }
-                span.profit-item-title {
+                .profit-item-title {
                     position: relative;
                     min-height: 7em;
                     font-weight: 700;

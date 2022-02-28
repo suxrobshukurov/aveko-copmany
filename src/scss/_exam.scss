@@ -8,7 +8,7 @@ section.exam {
     height: 60em;
     background: url("../img/exam-bg.webp") center top no-repeat;
     background-size: contain;
-    &* {
+    & * {
         position: relative;
         margin: 0;
         padding: 0;
@@ -16,10 +16,8 @@ section.exam {
     }
     .exam-left-row {
         position: relative;
-        width: 50%;
-        z-index: 10;
-        left: 29.3em;
-        top: 9em;
+        flex: 0.56;
+        padding: 9em 0 0 29.2em;
         h2.exam-title {
             text-transform: uppercase;
             font-size: 2.47em;
@@ -37,7 +35,7 @@ section.exam {
         ul.program-list {
             width: 20em;
             color: white;
-            padding: 4.7em 0 0 0.26em;
+            padding: 4.7em 0 0 0.46em;
             list-style: none;
             li.program-item {
                 &:not(:last-child) {
@@ -53,7 +51,7 @@ section.exam {
                         height: 18px;
                         border-radius: 50%;
                         background: $lightBlue;
-                        left: -0.22em;
+                        left: -2.05em;
                     }
                     span.title-mark {
                         font-size: 1.3em;
@@ -76,48 +74,50 @@ section.exam {
         }
     }
     .exam-right-row {
+        flex: 1;
         position: relative;
-        display: block;
-        width: 50%;
-        z-index: 10;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1;
+        outline: none;
+        border: none;
+        & * {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1;
+            outline: none;
+            border: none;
+        }
         .gallery {
-            .example-img {
-                img {
-                    position: absolute;
-                    bottom: 0;
+            padding: 9em 0 0 2em;
+            .swiper-box {
+                width: 28em;
+                .swiper.mySwiper {
+                    width: 28em;
+                    height: 40.7em;
+                    .swiper-wrapper {
+                        a.swiper-slide {
+                            position: relative;
+                            span.zoom-icon {
+                                position: absolute;
+                                background: url("../img/zoom-icon.svg") no-repeat center center;
+                                background-size: contain;
+                                width: 4em;
+                                height: 4em;
+                                top: 2em;
+                                right: 2em;
+                                z-index: 3;
+                            }
+                            img {
+                                line-height: 1;
+                            }
+                        }
+                    }
                 }
-                a.img-icon {}
             }
         }
     }
-    // .bg-exam {
-    //     display: block;
-    //     position: absolute;
-    //     background: url("../img/exam-bg.webp") center center no-repeat;
-    //     background-size: contain;
-    //     width: 100%;
-    //     height: 56em;
-    //     top: 0;
-    //     z-index: 2;
-    // }
-    // .bg-slice {
-    //     display: block;
-    //     position: absolute;
-    //     background-size: contain;
-    //     z-index: 1;
-    // }
-    // .slice-left {
-    //     background: url("../img/exam-left-slice.webp") center center no-repeat;
-    //     width: 13.9em;
-    //     height: 23.7em;
-    //     top: -2.4em;
-    //     left: 0;
-    // }
-    // .slice-right {
-    //     background: url("../img/exam-right-slice.webp") center center no-repeat;
-    //     width: 13.9em;
-    //     height: 23.7em;
-    //     bottom: -1.8em;
-    //     right: 0;
-    // }
 }

@@ -24,12 +24,20 @@ section.exam
 
     .exam-right-row
         .gallery
-            .example-img
-                img(src="/img/example-1.webp", alt="example-01")
-                a(href="#").img-icon
-            .example-img
-                img(src="/img/example-2.webp", alt="example-02")
-                a(href="#").img-icon
-    //- .bg-exam
-    //- .bg-slice.slice-left
-    //- .bg-slice.slice-right
+            .swiper-box
+                .swiper.mySwiper 
+                    .swiper-wrapper 
+                        a.swiper-slide(
+                            data-fancybox
+                            data-caption="example-01"
+                            href="img/example-1.webp"
+                        )
+                            span.zoom-icon
+                            img(src="img/example-1.webp", alt="example-01")
+                        a.swiper-slide(
+                            data-fancybox
+                            data-caption="example-02"
+                            href="img/example-2.webp"
+                        )
+                            span.zoom-icon
+                            img(src="img/example-2.webp", alt="example-0")
