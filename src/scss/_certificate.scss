@@ -1,0 +1,49 @@
+section.certificate {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    background: url("../img/certificate-bg.webp") no-repeat center center;
+    background-size: cover;
+    min-height: 42em;
+    .cer-element {
+        span.line {}
+        span.circle {}
+        .line-1 {}
+        .line-2 {}
+    }
+    .container {
+        max-width: 59vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .certificate-left-block {
+            position: relative;
+            flex: 1;
+            padding: 6.7em 0 0 0;
+            a.certificate-img {
+                position: relative;
+                span.zoom-icon {
+                    position: absolute;
+                    background: url("../img/zoom-icon.svg") no-repeat center center;
+                    background-size: contain;
+                    width: 4em;
+                    height: 4em;
+                    top: -20em;
+                    right: 2em;
+                    z-index: 2;
+                }
+                img {}
+            }
+        }
+        .certificate-right-block {
+            flex: 1;
+            .certificate-title {}
+            .certificate-description {
+                p {}
+            }
+        }
+    }
+}

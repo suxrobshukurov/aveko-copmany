@@ -1,18 +1,141 @@
-canvas#stars {
+#particles-js {
+    position: absolute;
     width: 100%;
-    height: 600px;
-    background: #E8E8E8;
+    height: 50em;
+    padding: 0 0 2.2em 0;
+    background-image: url("../img/how-can-bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles {
+    background: $darkBlue;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: $darkBlue;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
 }
 
 section.how-can {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    outline: none;
+    border: none;
+    margin: 0px 0 21.5em 0;
+    & * {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1;
+        outline: none;
+        border: none;
+    }
     .container {
-        h2.how-can-title {}
+        width: 100%;
+        max-width: 62.8vw;
+        margin: 0 auto;
+        padding: 0;
+        h2.how-can-title {
+            font-size: 4.3em;
+            max-width: 70%;
+            padding: 1.3em 0 0 0;
+            line-height: 1.19;
+            letter-spacing: -0.012em;
+            text-transform: uppercase;
+            color: $lightBlue;
+        }
         ul.how-can-list {
-            li.how-can-item.profit-item--first {
-                .how-can-icon {
-                    .icon-number {}
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li.how-can-item {
+                display: flex;
+                width: 12.5em;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                &:hover span.item-bg {
+                    transform: rotate(45deg);
                 }
-                .how-can-item-title {}
+                &:nth-child(1) {
+                    top: 6em;
+                }
+                &:nth-child(2) {
+                    top: 2em;
+                }
+                &:nth-child(3) {
+                    top: -2em;
+                }
+                &:nth-child(4) {
+                    top: -6em;
+                }
+                span.item-bg {
+                    position: absolute;
+                    background-size: contain;
+                    top: 0;
+                    width: 11em;
+                    height: 11em;
+                    transition: 0.3s ease-in-out;
+                }
+                .profit-item--first {
+                    background: url("../img/how-can/how-can-1.svg") no-repeat center center;
+                }
+                .profit-item--second {
+                    background: url("../img/how-can/how-can-2.svg") no-repeat center center;
+                }
+                .profit-item--third {
+                    background: url("../img/how-can/how-can-3.svg") no-repeat center center;
+                }
+                .profit-item--fourth {
+                    background: url("../img/how-can/how-can-4.svg") no-repeat center center;
+                }
+                span.icon-number {
+                    position: relative;
+                    font-size: 7em;
+                    font-weight: 700;
+                    color: $grey;
+                    top: 0.3em;
+                }
+                .how-can-item-title {
+                    font-weight: 700;
+                    text-align: center;
+                    font-size: 1.1em;
+                    top: 3.5em;
+                }
             }
         }
     }

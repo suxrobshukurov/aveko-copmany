@@ -98,62 +98,59 @@
         </div>
       </div>
     </section>
-    <canvas id="stars"></canvas>
+    <div id="particles-js"></div>
     <section class="how-can">
       <div class="container">
         <h2 class="how-can-title">как получить сертификат</h2>
         <ul class="how-can-list">
-          <li class="how-can-item profit-item--first">
-            <div class="how-can-icon">
-              <div class="icon-number">1</div>
-            </div>
+          <li class="how-can-item"> <span class="item-bg profit-item--first"></span><span class="icon-number">1</span>
             <div class="how-can-item-title">Запишитесь на экзамен в удобный для вас день и время.</div>
           </li>
-          <li class="how-can-item profit-item--second">
-            <div class="how-can-icon">
-              <div class="icon-number">2</div>
-            </div>
+          <li class="how-can-item"><span class="item-bg profit-item--second"></span><span class="icon-number">2</span>
             <div class="how-can-item-title">Предоставьте оригинал паспорта и официальный перевод паспорта.</div>
           </li>
-          <li class="how-can-item profit-item--third">
-            <div class="how-can-icon">
-              <div class="icon-number">3</div>
-            </div>
+          <li class="how-can-item"><span class="item-bg profit-item--third"></span><span class="icon-number">3</span>
             <div class="how-can-item-title">Заключите договор об оказании услуг и оплатите экзамен в кассе центра тестирования.</div>
           </li>
-          <li class="how-can-item profit-item--fourth">
-            <div class="how-can-icon">
-              <div class="icon-number">4</div>
-            </div>
+          <li class="how-can-item"><span class="item-bg profit-item--fourth"></span><span class="icon-number">4</span>
             <div class="how-can-item-title">Сдайте тест и получите сертификат!</div>
           </li>
         </ul>
       </div>
     </section>
     <section class="schedule">
-      <h2 class="schedule-title">график работы</h2>
-      <div class="schedule-time"><span class="time">9:00</span><span class="icon"> </span><span class="time">18:00</span></div>
-      <ul class="schedule-items">
-        <li class="schedule-item">пн</li>
-        <li class="schedule-item">вт</li>
-        <li class="schedule-item">ср</li>
-        <li class="schedule-item">чт</li>
-        <li class="schedule-item">пт</li>
-        <li class="schedule-item">сб</li>
-        <li class="schedule-item">вс</li>
-      </ul>
+      <div class="container">
+        <div class="head-schedule">
+          <h2 class="schedule-title">график работы</h2>
+          <div class="schedule-time"><span class="time">9:00</span><span class="icon"> </span><span class="time">18:00</span></div>
+        </div>
+        <div class="body-schedule">
+          <ul class="schedule-items">
+            <li class="schedule-item work">пн</li>
+            <li class="schedule-item work">вт</li>
+            <li class="schedule-item work">ср</li>
+            <li class="schedule-item work">чт</li>
+            <li class="schedule-item work">пт</li>
+            <li class="schedule-item not-working">сб</li>
+            <li class="schedule-item not-working">вс</li>
+          </ul>
+        </div>
+      </div>
     </section>
     <section class="certificate">
-      <div class="certificate-left-block">
-        <div class="certificate-img"><img src="/img/certificate.webp" alt="Образец сертификата"><a class="img-icon" href="#"></a></div>
-      </div>
-      <div class="certificate-right-block">
-        <div class="certificate-title">государственный сертификат</div>
-        <div class="certificate-description">
-          <p>Выдаем сертификат гособразца о владении русским языком.</p>
-          <p>В сертификате указываются фамилия, имя, отчество тестируемого, дата рождения, паспортные данные в соответствии с официальным переводом  иностранного паспорта.</p>
-          <p>Внимательно проверяйте, верно ли указаны ваши данные при получении.</p>
-          <p>Срок действия сертификата — 5 лет с момента выдачи.</p>
+      <div class="cer-element"><span class="line line-1"> </span><span class="circle"></span><span class="line line-2"> </span></div>
+      <div class="container">
+        <div class="certificate-left-block">
+          <div class="certificate-img"><a class="certificate-img" data-fancybox data-caption="example-01" href="/img/certificate.webp"><span class="zoom-icon"></span><img src="/img/certificate.webp" alt="Образец сертификата"></a></div>
+        </div>
+        <div class="certificate-right-block">
+          <div class="certificate-title">государственный сертификат</div>
+          <div class="certificate-description">
+            <p>Выдаем сертификат гособразца о владении русским языком.</p>
+            <p>В сертификате указываются фамилия, имя, отчество тестируемого, дата рождения, паспортные данные в соответствии с официальным переводом  иностранного паспорта.</p>
+            <p>Внимательно проверяйте, верно ли указаны ваши данные при получении.</p>
+            <p>Срок действия сертификата — 5 лет с момента выдачи.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -191,7 +188,7 @@
       </div>
     </footer>
     <script src="/js/libs.min.js"></script>
-    <script src="http://atuin.ru/js/art/stars.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="/js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,91 @@
+section.schedule {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    & * {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1;
+    }
+    .container {
+        margin: 0 auto;
+        .head-schedule {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            h2.schedule-title {
+                width: 29%;
+                color: $darkBlue;
+                text-transform: uppercase;
+                font-size: 4em;
+                font-weight: 700;
+                padding: 0.2em 0 0 0;
+                line-height: 1.25;
+                letter-spacing: 0.028em;
+            }
+            .schedule-time {
+                width: 71%;
+                padding: 3em 0 0 0;
+                span.time {
+                    color: #9AABB3;
+                    font-weight: 700;
+                    font-size: 5em;
+                    padding: 0 0.2em 0 .1em;
+                }
+                span.icon {
+                    display: inline-block;
+                    background: url("../img/time-space.svg") no-repeat center center;
+                    background-size: contain;
+                    width: 6.5em;
+                    height: 3.3em;
+                    padding: 2em 0 0 0;
+                }
+                span.time {}
+            }
+        }
+        .body-schedule {
+            ul.schedule-items {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+                padding: 3.3em 0 3.3em 0;
+                li.schedule-item {
+                    display: flex;
+                    font-weight: 700;
+                    font-size: 2.7em;
+                    text-transform: uppercase;
+                    color: $white;
+                    border-radius: 50%;
+                    height: 2.7em;
+                    width: 2.7em;
+                    text-align: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    outline-offset: 4px;
+                }
+                .work {
+                    background: $lightBlue;
+                    outline: 2px solid $lightBlue;
+                    &:not(:first-child)::before {
+                        content: "";
+                        position: absolute;
+                        left: -1.27em;
+                        width: 1.17em;
+                        height: 2px;
+                        background-color: $lightBlue;
+                    }
+                }
+                .not-working {
+                    background: $grey;
+                    outline: 2px solid $grey;
+                }
+            }
+        }
+    }
+}

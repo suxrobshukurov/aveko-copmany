@@ -5,6 +5,30 @@
     box-sizing: border-box;
     font-size: 16px;
     line-height: 1;
+    @media (min-width: 320px) {
+        /* smartphones, iPhone, portrait 480x320 phones */
+        font-size: 10px;
+    }
+    @media (min-width:481px) {
+        /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+        font-size: 11px;
+    }
+    @media (min-width:641px) {
+        /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+        font-size: 12px;
+    }
+    @media (min-width:961px) {
+        /* tablet, landscape iPad, lo-res laptops ands desktops */
+        font-size: 13px;
+    }
+    @media (min-width:1025px) {
+        /* big landscape tablets, laptops, and desktops */
+        font-size: 14px;
+    }
+    @media (min-width:1281px) {
+        /* hi-res laptops and desktops */
+        font-size: 16px;
+    }
 }
 
 a {
