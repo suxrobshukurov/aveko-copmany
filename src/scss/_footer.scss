@@ -1,0 +1,115 @@
+footer {
+    position: relative;
+    margin: -3.3em 0 0 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    background: url("../img/bg/footer-bg.webp") no-repeat center center;
+    background-size: cover;
+    min-height: 15.4375em;
+    & * {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1;
+    }
+    .footer {
+        width: 60.9vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        top: 8em;
+        color: $white;
+        img.logo {}
+        .address {
+            p.address-item {
+                font-size: 1.15em;
+                font-weight: 700;
+                padding: 0 0 0.3em 0;
+            }
+        }
+        .schedule {
+            p.schedule-item {
+                font-size: 1.15em;
+                padding: 0 0 0.3em 0;
+            }
+        }
+        .phone {
+            p.phone-item {
+                padding: 0 0 0.3em 0;
+                a.item-link {
+                    font-size: 1.15em;
+                    font-weight: 700;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.to-top-box {
+    position: fixed;
+    border-radius: 50%;
+    right: 3em;
+    top: 80vh;
+    border: 3px solid #00263A;
+    padding: 5px;
+    font-family: "Avanti", Sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    width: 6em;
+    height: 6em;
+    box-shadow: 0 0 10px 1px #ccc;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    outline: none;
+    z-index: 9999;
+    & * {
+        outline: none;
+    }
+    &:hover {
+        border-color: #28abb8;
+    }
+    &:hover .to-top-inner {
+        background-color: #28abb8;
+    }
+    @media screen and (max-width: 700px) {
+        display: none
+    }
+    .to-top-inner {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #00263A;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s ease-in;
+        span.to-top-text {
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            top: 45px;
+        }
+        span.to-top-arrow {
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: 0.5em;
+            top: 15px;
+        }
+    }
+}
+
+.to-top-box.js-to-top.hidden {
+    display: none;
+    transition: 0.3s linear;
+}

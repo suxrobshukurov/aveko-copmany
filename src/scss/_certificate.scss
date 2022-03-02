@@ -8,10 +8,37 @@ section.certificate {
     background-size: cover;
     min-height: 42em;
     .cer-element {
-        span.line {}
-        span.circle {}
-        .line-1 {}
-        .line-2 {}
+        position: relative;
+        .line {
+            display: block;
+            background-color: $lightBlue;
+            position: absolute;
+            height: 2px;
+        }
+        .circle {
+            background-color: $lightBlue;
+            position: absolute;
+            width: 0.7em;
+            height: 0.7em;
+            border-radius: 50%;
+            left: -6.7em;
+            top: -8em;
+            transition: 0.3s linear;
+        }
+        .line-1 {
+            width: 6.3em;
+            left: -6.2em;
+            top: -7.7em;
+            transition: 0.3s linear;
+        }
+        .line-2 {
+            width: 21.3em;
+            left: -27.6em;
+            top: -7.7em;
+            transform-origin: center right;
+            transform: rotate(-30deg);
+            transition: 0.3s linear;
+        }
     }
     .container {
         max-width: 59vw;
@@ -22,27 +49,71 @@ section.certificate {
         .certificate-left-block {
             position: relative;
             flex: 1;
-            padding: 6.7em 0 0 0;
-            a.certificate-img {
-                position: relative;
-                span.zoom-icon {
-                    position: absolute;
-                    background: url("../img/zoom-icon.svg") no-repeat center center;
-                    background-size: contain;
-                    width: 4em;
-                    height: 4em;
-                    top: -20em;
-                    right: 2em;
-                    z-index: 2;
+            .certificate-img {
+                &:hover+.cer-element .circle {
+                    left: -5.7em;
+                    top: -4.9em;
                 }
-                img {}
+                &:hover+.cer-element .line-1 {
+                    width: 6.3em;
+                    left: -6.2em;
+                    top: -7.7em;
+                    transform-origin: center right;
+                    transform: rotate(-30deg);
+                }
+                &:hover+.cer-element .line-2 {
+                    width: 21.3em;
+                    left: -26.8em;
+                    top: -4.7em;
+                    transform-origin: center right;
+                    transform: rotate(16deg);
+                }
+                a.img-link {
+                    // padding: 6.7em 0 0 0;
+                    top: 7.1em;
+                    position: relative;
+                    span.zoom-icon {
+                        position: absolute;
+                        background: url("../img/zoom-icon.svg") no-repeat center center;
+                        background-size: contain;
+                        width: 4em;
+                        height: 4em;
+                        top: -20em;
+                        right: 2em;
+                        z-index: 2;
+                    }
+                    img {}
+                }
             }
         }
         .certificate-right-block {
             flex: 1;
-            .certificate-title {}
+            position: relative;
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+            & * {
+                position: relative;
+                margin: 0;
+                padding: 0;
+                line-height: 1;
+            }
+            .certificate-title {
+                font-size: 2.5em;
+                color: $lightBlue;
+                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 1.15;
+                padding: 2.6em 0 0 0.8em;
+            }
             .certificate-description {
-                p {}
+                padding: 2.8em 6.7em 0 1.9em;
+                p {
+                    font-weight: 700;
+                    font-size: 1.25em;
+                    line-height: 1.135;
+                    padding: 0 0 1.2em 0;
+                }
             }
         }
     }

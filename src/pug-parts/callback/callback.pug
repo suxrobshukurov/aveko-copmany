@@ -1,14 +1,18 @@
 section.callback
-    .callback-form
-        form(action="") 
+    .callback-form.wow.fadeInRightBig(data-wow-delay="0.1s")
+        form(action="#").form 
             h2.form-title записаться на экзамен
             .field
                 label(for="name").form-label Ваше имя
                 input(type="text" name="name").form-input
             .field
                 label(for="phone").form-label Номер телефона
-                input(type="text" name="phone").form-input
+                input(type="text" name="phone").form-input#js-phone-field
             .btn--cyan
                 input(type="button", value="Записаться").btn
     .map
-        img(src="/img/map.jpg", alt="", style="width:80vw;")
+        .js-click-remove-div
+        iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A9a55ddf99555113bf42d7ee5848494ab6a6c0941de25b9268b312afdb1b92072&amp;source=constructor" 
+            width="100%" 
+            height="720" 
+            frameborder="0")

@@ -24,6 +24,14 @@ header {
         left: 19vw;
         top: 2.8vw;
         z-index: 999;
+        @media (max-width: 961px) {
+            position: relative;
+            top: 0;
+            left: 2em;
+            max-width: 90vw;
+            margin: 0 auto;
+            padding: 1em 0;
+        }
         img.logo {
             max-width: 7.1em;
             width: 100%;

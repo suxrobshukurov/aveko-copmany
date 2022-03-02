@@ -1,17 +1,20 @@
 header 
     .header 
-        img.logo(
+        img.logo.wow.fadeInLeftBig(
             src="/img/logo.svg", 
             alt="AVEKO"
+            data-wow-delay="0.1s"
             )
-        nav
+        nav.wow.fadeInRightBig(
+            data-wow-delay="0.1s"
+        )
             ul.nav-items
                 li.nav-item
-                    a.nav-link(href="#") Сертификат
+                    a.nav-link.flowing-scroll(href="#certificate") Сертификат
                 li.nav-item
-                    a.nav-link(href="#") Экзамен
+                    a.nav-link.flowing-scroll(href="#exam") Экзамен
                 li.nav-item
-                    a.nav-link(href="#") Контакты
+                    a.nav-link.flowing-scroll(href="#contacts") Контакты
             .header-button
                 .btn
                     span.btn-icon

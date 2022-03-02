@@ -1,0 +1,76 @@
+section.callback {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+    & * {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        box-sizing: border-box;
+    }
+    .callback-form {
+        position: absolute;
+        display: inline-block;
+        max-width: 28.2em;
+        max-height: 31.7em;
+        height: 100%;
+        width: 100%;
+        background-color: $darkBlue;
+        color: $white;
+        z-index: 10;
+        right: 16.5em;
+        top: -2.4em;
+        form.form {
+            padding: 2.2em 3.7em 0 2.3em;
+            h2.form-title {
+                font-size: 2.48em;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding: 0 0 0 0.4em;
+                line-height: 1.176;
+            }
+            .field {
+                display: flex;
+                flex-direction: column;
+                label.form-label {
+                    font-weight: 700;
+                    font-size: 1.25em;
+                    &:not(:last-child) {
+                        padding: 1.5em 0 0 0.9em;
+                    }
+                }
+                input.form-input {
+                    margin: 0.3em 0 0 0;
+                    padding: 1em 1.8em;
+                    border-radius: 30px;
+                    border: none;
+                    outline: none;
+                }
+            }
+            .btn--cyan {
+                display: inline-block;
+                outline: 1px solid $lightBlue;
+                outline-offset: 5px;
+                border-radius: 30px;
+                margin: 4.5em 0 0 0.5em;
+                input.btn {
+                    background: $lightBlue;
+                    padding: 0.6em 2em;
+                    border: none;
+                    outline: none;
+                    border-radius: 30px;
+                    color: $white;
+                    font-weight: 700;
+                    font-size: 1.15em;
+                }
+            }
+        }
+        .map {
+            .js-click-remove-div {}
+            iframe {}
+        }
+    }
+}

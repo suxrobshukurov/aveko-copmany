@@ -15,15 +15,26 @@ section.exam {
         box-sizing: border-box;
         z-index: 2;
     }
+    @media (max-width: 961px) {
+        height: auto;
+        background: url("../img/bg/exem-bg-table.webp") no-repeat center center;
+        background-size: cover;
+    }
     .exam-left-row {
         position: relative;
         flex: 0.56;
         padding: 9em 0 0 29.2em;
+        @media (max-width: 961px) {
+            padding: 3.5em 0 0 5.1em;
+        }
         h2.exam-title {
             text-transform: uppercase;
             font-size: 2.47em;
             letter-spacing: -0.001em;
             color: $white;
+            @media (max-width: 961px) {
+                font-size: 2em;
+            }
         }
         .exam-description {
             width: 14.4em;
@@ -32,12 +43,18 @@ section.exam {
             letter-spacing: -0.02em;
             color: $white;
             padding: 1.5em 0 0 0;
+            @media (max-width: 961px) {
+                font-size: 1em;
+            }
         }
         ul.program-list {
             width: 20em;
             color: white;
             padding: 4.7em 0 0 0.46em;
             list-style: none;
+            @media (max-width: 961px) {
+                font-size: 1em;
+            }
             li.program-item {
                 &:not(:last-child) {
                     border-left: 2px solid $lightBlue;
@@ -58,10 +75,16 @@ section.exam {
                         font-size: 1.3em;
                         font-weight: 700;
                         color: $lightBlue;
+                        @media (max-width: 961px) {
+                            font-size: 1em;
+                        }
                     }
                     span {
                         font-size: 1.3em;
                         font-weight: 700;
+                        @media (max-width: 961px) {
+                            font-size: 1em;
+                        }
                     }
                 }
                 .program-item-description {
@@ -69,6 +92,9 @@ section.exam {
                     p {
                         font-size: 1.25em;
                         line-height: 1.52;
+                        @media (max-width: 961px) {
+                            font-size: 0.95em;
+                        }
                     }
                 }
             }
@@ -94,11 +120,14 @@ section.exam {
         }
         .gallery {
             padding: 9em 0 0 2em;
+            @media (max-width: 961px) {
+                padding: 3em 0 0 4em;
+            }
             .swiper-box {
                 width: 28em;
                 .swiper.mySwiper {
                     width: 28em;
-                    height: 40.7em;
+                    height: auto;
                     .swiper-wrapper {
                         a.swiper-slide {
                             position: relative;
@@ -111,9 +140,18 @@ section.exam {
                                 top: 2em;
                                 right: 2em;
                                 z-index: 3;
+                                @media (max-width: 961px) {
+                                    right: 6em;
+                                    width: 3em;
+                                    height: 3em;
+                                }
                             }
                             img {
+                                width: 29em;
                                 line-height: 1;
+                                @media (max-width: 961px) {
+                                    width: 25em;
+                                }
                             }
                         }
                     }
