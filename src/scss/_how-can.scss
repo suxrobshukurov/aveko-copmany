@@ -20,9 +20,9 @@
     width: 80px;
     color: $darkBlue;
     font-size: .8em;
-    text-align: left;
-    text-indent: 4px;
-    line-height: 14px;
+    // text-align: left;
+    // text-indent: 4px;
+    // line-height: 14px;
     padding-bottom: 2px;
 }
 
@@ -68,6 +68,9 @@ section.how-can {
         max-width: 62.8vw;
         margin: 0 auto;
         padding: 0;
+        @media (max-width: 961px) {
+            max-width: 80vw;
+        }
         h2.how-can-title {
             font-size: 4.3em;
             max-width: 70%;

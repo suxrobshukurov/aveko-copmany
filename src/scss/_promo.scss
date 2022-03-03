@@ -17,7 +17,7 @@ section.promo {
     height: 54.6em;
     @media (max-width: 961px) {
         background-size: cover;
-        height: 40em;
+        height: auto;
     }
     .container {
         width: 100%;
