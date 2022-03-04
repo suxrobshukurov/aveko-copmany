@@ -7,6 +7,10 @@ footer {
     background: url("../img/bg/footer-bg.webp") no-repeat center center;
     background-size: cover;
     min-height: 15.4375em;
+    @media (max-width: 500px) {
+        background: $darkBlue;
+        height: 20em;
+    }
     & * {
         position: relative;
         margin: 0;
@@ -24,8 +28,21 @@ footer {
         align-items: center;
         top: 8em;
         color: $white;
+        @media (max-width: 1024px) {
+            width: 82vw;
+        }
+        @media (max-width: 500px) {
+            width: 82vw;
+            top: 0;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 2em 0 0 0;
+        }
         img.logo {}
         .address {
+            @media (max-width: 500px) {
+                padding: 1em 0 0 0;
+            }
             p.address-item {
                 font-size: 1.15em;
                 font-weight: 700;
@@ -33,12 +50,18 @@ footer {
             }
         }
         .schedule {
+            @media (max-width: 500px) {
+                padding: 1em 0 0 0;
+            }
             p.schedule-item {
                 font-size: 1.15em;
                 padding: 0 0 0.3em 0;
             }
         }
         .phone {
+            @media (max-width: 500px) {
+                padding: 1em 0 0 0;
+            }
             p.phone-item {
                 padding: 0 0 0.3em 0;
                 a.item-link {
@@ -54,13 +77,13 @@ footer {
 .to-top-box {
     position: fixed;
     border-radius: 50%;
-    right: 3em;
+    right: 8vw;
     top: 80vh;
     border: 3px solid #00263A;
-    padding: 5px;
+    padding: 0.33em;
     font-family: "Avanti", Sans-serif;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1em;
+    line-height: 1;
     width: 6em;
     height: 6em;
     box-shadow: 0 0 10px 1px #ccc;
@@ -77,7 +100,7 @@ footer {
     &:hover .to-top-inner {
         background-color: #28abb8;
     }
-    @media screen and (max-width: 700px) {
+    @media (max-width: 700px) {
         display: none
     }
     .to-top-inner {
@@ -95,7 +118,7 @@ footer {
             align-items: center;
             justify-content: center;
             color: #fff;
-            top: 45px;
+            top: 3em;
         }
         span.to-top-arrow {
             position: absolute;
@@ -104,7 +127,7 @@ footer {
             justify-content: center;
             margin: 0 auto;
             width: 0.5em;
-            top: 15px;
+            top: 1em;
         }
     }
 }

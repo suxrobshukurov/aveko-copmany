@@ -63,7 +63,8 @@ gulp.task('js', async function() {
             'node_modules/wowjs/dist/wow.min.js',
             'node_modules/swiper/swiper-bundle.min.js',
             'node_modules/@fancyapps/ui/dist/fancybox.umd.js',
-            'node_modules/jquery.maskedinput/src/jquery.maskedinput.js'
+            'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
+            'node_modules/particles.js/particles.js'
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())

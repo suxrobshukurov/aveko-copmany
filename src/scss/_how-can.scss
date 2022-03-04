@@ -7,6 +7,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    @media (max-width: 700px) {
+        height: 30em;
+    }
+    @media (max-width:570px) {
+        height: 36em;
+    }
+    @media (max-width:500px) {
+        height: 33em;
+    }
 }
 
 
@@ -54,6 +63,15 @@ section.how-can {
     outline: none;
     border: none;
     margin: 0px 0 21.5em 0;
+    @media (max-width: 700px) {
+        margin: 0px 0 8.5em 0;
+    }
+    @media (max-width:500px) {
+        margin: 0px 0 12.5em 0;
+    }
+    @media (max-width: 420px) {
+        margin: 0px 0 6.5em 0;
+    }
     & * {
         position: relative;
         margin: 0;
@@ -68,7 +86,7 @@ section.how-can {
         max-width: 62.8vw;
         margin: 0 auto;
         padding: 0;
-        @media (max-width: 961px) {
+        @media (max-width: 1020px) {
             max-width: 80vw;
         }
         h2.how-can-title {
@@ -79,12 +97,23 @@ section.how-can {
             letter-spacing: -0.012em;
             text-transform: uppercase;
             color: $lightBlue;
+            @media (max-width: 900px) {
+                font-size: 3em;
+                max-width: 50%;
+            }
+            @media (max-width: 700px) {}
+            @media (max-width: 500px) {
+                font-size: 2.5em;
+            }
         }
         ul.how-can-list {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
+            @media (max-width: 700px) {
+                flex-wrap: nowrap;
+            }
             li.how-can-item {
                 display: flex;
                 width: 12.5em;
@@ -113,6 +142,10 @@ section.how-can {
                     width: 11em;
                     height: 11em;
                     transition: 0.3s ease-in-out;
+                    @media (max-width: 700px) {
+                        width: 6em;
+                        height: 6em;
+                    }
                 }
                 .profit-item--first {
                     background: url("../img/how-can/how-can-1.svg") no-repeat center center;
@@ -132,12 +165,19 @@ section.how-can {
                     font-weight: 700;
                     color: $grey;
                     top: 0.3em;
+                    @media (max-width: 700px) {
+                        font-size: 3.8em;
+                    }
                 }
                 .how-can-item-title {
                     font-weight: 700;
                     text-align: center;
                     font-size: 1.1em;
                     top: 3.5em;
+                    @media (max-width: 700px) {
+                        font-size: 1em;
+                        top: 2.5em;
+                    }
                 }
             }
         }

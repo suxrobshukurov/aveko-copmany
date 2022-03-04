@@ -1,5 +1,7 @@
 header 
-    .header 
+    .header
+        .menu-burger
+            span 
         img.logo.wow.fadeInLeftBig(
             src="img/logo.svg", 
             alt="AVEKO"
@@ -15,7 +17,41 @@ header
                     a.nav-link.flowing-scroll(href="#exam") Экзамен
                 li.nav-item
                     a.nav-link.flowing-scroll(href="#contacts") Контакты
-            .header-button
+            .header-button.wow.fadeInRightBig
                 .btn
                     span.btn-icon
                     a(href="tel:+7812454-62-65") +7 812 454-62-65
+        .mob-menu
+            .menu-header
+                img.mob-logo(
+                    src="img/logo.svg", 
+                    alt="AVEKO"
+                    )
+            .menu-body
+                ul.nav-items
+                    li.nav-item
+                        a.nav-link.flowing-scroll(href="#certificate") Сертификат
+                    li.nav-item
+                        a.nav-link.flowing-scroll(href="#exam") Экзамен
+                    li.nav-item
+                        a.nav-link.flowing-scroll(href="#callback") Записаться
+            .menu-footer
+                span.line.line-1 
+                span.circle 
+                span.line.line-2
+                ul.contact-items 
+                    li.contact-item.address
+                        p.address-item м. Московская ул. 
+                        p.address-item Кубинская, д. 77, лит. А
+                    li.contact-item.schedule
+                        p.schedule-item График работы:
+                        p.schedule-item понедельник-пятница
+                        p.schedule-item с 9:00 до 18:00
+                    li.contact-item.phone
+                        p.phone-item
+                            a.item-link(href="tel:+78124546265") +7 812 454-62-65
+                        p.phone-item
+                            a.item-link(href="mailto:info@aveko.company") info@aveko.company
+        .mob-btn
+            a.btn-link(href="tel:+78124546265") 
+                img(src="img/phone-icon-mob.svg", alt="icon")

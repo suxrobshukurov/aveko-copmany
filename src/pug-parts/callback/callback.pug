@@ -1,6 +1,6 @@
 section.callback
     .callback-form.wow.fadeInRightBig(data-wow-delay="0.1s")
-        form(action="#").form 
+        form(action="#").form#callback 
             h2.form-title записаться на экзамен
             .field
                 label(for="name").form-label Ваше имя
@@ -12,7 +12,8 @@ section.callback
                 input(type="button", value="Записаться").btn
     .map
         .js-click-remove-div
-        iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A9a55ddf99555113bf42d7ee5848494ab6a6c0941de25b9268b312afdb1b92072&amp;source=constructor" 
-            width="100%" 
-            height="720" 
-            frameborder="0")
+        script(
+            type="text/javascript" 
+            charset="utf-8" 
+            async 
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9a55ddf99555113bf42d7ee5848494ab6a6c0941de25b9268b312afdb1b92072&amp;width=100%25&amp;height=48em&amp;lang=ru_RU&amp;scroll=true")

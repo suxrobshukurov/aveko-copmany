@@ -12,18 +12,18 @@ section.promo {
         line-height: 1;
     }
     background: url("../img/promo-bg.webp") top center no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     height: 54.6em;
     @media (max-width: 961px) {
         background-size: cover;
-        height: auto;
+        height: 40em;
     }
     .container {
         width: 100%;
         max-width: 61vw;
         margin: 0 auto;
-        @media (max-width: 961px) {
+        @media (max-width: 1200px) {
             max-width: 85vw;
         }
         .promo-title {
@@ -37,32 +37,41 @@ section.promo {
                 line-height: 1.17;
                 margin: 0;
                 padding: 0;
-                @media (max-width: 961px) {
-                    font-size: 3.5em;
+                @media (max-width: 700px) {
+                    font-size: 2.8em;
+                }
+                @media (max-width: 500px) {
+                    font-size: 2.5em;
                 }
             }
-            @media (max-width: 961px) {
+            @media (max-width: 1200px) {
                 padding: 5em 0 0 0;
                 width: 70%;
             }
         }
         .promo-description {
-            padding: 2.4em 0 0 0;
+            padding: 2.4em 0 4em 0;
             width: 50%;
             p.description {
                 font-size: 1.88em;
                 line-height: 1.12;
                 letter-spacing: -0.018em;
                 color: $darkBlue;
+                @media (max-width: 1400px) {
+                    font-size: 1.7em;
+                }
                 @media (max-width: 961px) {
                     font-size: 1.6em;
+                }
+                @media (max-width: 500px) {
+                    font-size: 1.2em;
+                    padding: 0 0 2em 0;
                 }
             }
         }
         .promo-btn.btn-box-animate {
             position: relative;
             display: inline;
-            top: 6.8em;
             .btn--cyan {
                 position: relative;
                 display: inline-block;
@@ -100,37 +109,37 @@ section.promo {
                 }
             }
             .lines-box {
-                @media (max-width: 961px) {
+                @media (max-width: 1200px) {
                     display: none;
                 }
                 position: absolute;
                 .line {
                     position: absolute;
-                    width: 130px;
+                    width: 8.6em;
                     height: 2px;
                     background-color: $lightBlue;
                     transition: 0.3s linear;
                 }
                 .line-1 {
-                    width: 999px;
-                    top: -140px;
-                    left: -90px;
+                    width: 66.6em;
+                    top: -9.3em;
+                    left: -6em;
                     transform-origin: center right;
                     transform: translateX(-100%);
                 }
                 .circle {
                     position: absolute;
-                    width: 20px;
-                    height: 20px;
-                    left: -100px;
-                    top: -150px;
+                    width: 1.3em;
+                    height: 1.3em;
+                    left: -6.6em;
+                    top: -10em;
                     background-color: $lightBlue;
                     border-radius: 50px;
                     transition: 0.3s linear;
                 }
                 .line-2 {
-                    top: -46px;
-                    left: -124px;
+                    top: -3.06em;
+                    left: -8.2em;
                     transform-origin: center right;
                     transform: rotate(45deg);
                 }
