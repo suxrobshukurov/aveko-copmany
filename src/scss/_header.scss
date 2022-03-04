@@ -282,7 +282,7 @@ header {
                 top: 5.5em;
                 left: 0;
                 width: 100vw;
-                height: auto;
+                height: 91vh;
                 background: $white;
                 overflow: hidden;
             }
@@ -300,6 +300,6 @@ header {
 }
 
 .fixed-page {
-    overflow: hidden;
+    position: fixed;
     /*запрещаем прокручивание страницы при открытом меню*/
 }
